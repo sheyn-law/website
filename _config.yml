@@ -1,0 +1,33 @@
+# Site settings
+title: Luka Obradović
+email: mnqgdyyg
+description: Advokat / Attorney at Law
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author: Luka Obradović
+street_address: Miloša Savčića 8
+city: Beograd
+state:
+zip_code:
+country: Srbija
+phone: +381 63 123 1985
+
+logo: logo.svg
+image: luka_small.jpg
+
+# Social settings
+facebook_url:
+github_url:
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url:
+
+# Build settings
+markdown: kramdown
+
+sass:
+style: compressed
