@@ -10,28 +10,6 @@ fragment: kontakt
 	{{site.phone}}
 </blockquote>
 
-<form action="https://formspree.io/{{ site.email }}" method="POST">
-	<div class="fields">
-		<div class="field half first">
-			<label for="name">Ime</label>
-			<input type="text" name="name" id="name" />
-		</div>
-		<div class="field half">
-			<label for="email">Email</label>
-			<input type="text" name="_replyto" id="email" />
-		</div>
-		<div class="field">
-			<label for="message">Poruka</label>
-			<textarea name="message" id="message" rows="4"></textarea>
-		</div>
-	</div>
-	<ul class="actions">
-		<li><input type="submit" value="Pošalji" class="primary" /></li>
-		{% if false %}
-		<li><input type="reset" value="Reset" /></li>
-		{% endif %}
-	</ul>
-</form>
 <ul class="icons">
 	{% if site.twitter_url %}
 				<li><a href="{{ site.twitter_url }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
@@ -62,3 +40,26 @@ fragment: kontakt
 				{% endif %}
 
 </ul>
+
+<form action="https://formspree.io/{{ site.email }}" method="POST">
+	<div class="fields">
+		<div class="field half first">
+			<label for="name">Ime</label>
+			<input type="text" name="name" id="name" />
+		</div>
+		<div class="field half">
+			<label for="email">Email</label>
+			<input type="text" name="_replyto" id="email" />
+		</div>
+		<div class="field">
+			<label for="message">Poruka</label>
+			<textarea name="message" id="message" rows="4"></textarea>
+		</div>
+	</div>
+	<ul class="actions">
+		<li><input type="submit" value="Pošalji" class="primary" /></li>
+		{% if false %}
+		<li><input type="reset" value="Reset" /></li>
+		{% endif %}
+	</ul>
+</form>
