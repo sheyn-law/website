@@ -1,5 +1,6 @@
 ---
 title: kontakt
+fragment: kontakt
 ---
 
 <h4>Adresa</h4>
@@ -8,7 +9,6 @@ title: kontakt
 	{{site.city}}, {{site.country}} <br /><br />
 	{{site.phone}}
 </blockquote>
-
 
 <form action="https://formspree.io/{{ site.email }}" method="POST">
 	<div class="fields">
