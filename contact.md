@@ -6,10 +6,13 @@ fragment: kontakt
 <h4>Adresa</h4>
 <blockquote>
 	{{site.street_address}}<br />
-	{{site.city}}, {{site.country}} <br /><br />
-	{{site.phone}}
+	{{site.city}}, {{site.country}}
 </blockquote>
 
+<ul class="contact">
+	<li><a href="tel:{{ site.phone }}"><span class="icon fa-phone"></span><span class="label">{{site.phone}}</span></a></li>
+	<li><a href="mailto:kontakt@lawobradovic.com"><i class="icon fa-envelope"></i><span class="label">kontakt@lawobradovic.com</span></a></li>
+</ul>
 <ul class="icons">
 	{% if site.twitter_url %}
 		<li><a href="{{ site.twitter_url }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
